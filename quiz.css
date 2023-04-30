@@ -1,0 +1,128 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(86, 165, 235, 0.25);
+    background-color: white;
+  }
+  
+  .choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #56a5eb;
+    color: white;
+  }
+  
+  .choice-text {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  
+  .correct {
+    background-color: #28a745;
+  }
+  
+  .incorrect {
+    background-color: #dc3545;
+  }
+  
+  /* HUD */
+  
+  #hud {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .hud-main-text {
+    text-align: center;
+  }
+  
+  #progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.5rem;
+  }
+  
+  #progressBarFull {
+    height: 3.4rem;
+    background-color: #56a5eb;
+    width: 0%;
+  }
+  
+  
+#outer {
+    border: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #circle {
+    background: #61DBFB;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .orbit{
+    height: 300px;
+    width: 100px;
+    background: transparent;
+    border-radius: 50%;
+    border: 15px solid #61DBFB;
+    position: absolute;
+    top: -120px;
+    left: -20px;
+  }
+  
+  .a {
+    transform: rotate(-30deg);
+    animation: rotateA 5s Infinite;
+    animation-timing-function: linear;
+  }
+  
+  .b {
+    transform: rotate(30deg);
+    animation: rotateB 5s Infinite;
+    animation-timing-function: linear;
+  }
+  
+  .c {
+    transform: rotate(90deg);
+    animation: rotateC 5s Infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes rotateA {
+    100%{
+        transform:rotate(330deg);
+      }
+  }
+  
+  @keyframes rotateB {
+    100%{
+        transform:rotate(390deg);
+      }
+  }
+  
+  @keyframes rotateC {
+    100%{
+        transform:rotate(450deg);
+      }
+  }
